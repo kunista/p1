@@ -6,7 +6,16 @@
 6 *
 7 * @author    Roman Orlov, <riorlov@gmail.com>
 9 */
-function getRandomQuote($quoteArray) {
+
+/**
+21   * returns a string for the random element of the array
+22   *
+23   * @param array $quoteArray array of quotes
+25   *
+26   * @return string
+27   */
+
+function getRandomQuote(array $quoteArray) {
     return $quoteArray[array_rand($quoteArray,1)];
 }
 $quoteArray = [
